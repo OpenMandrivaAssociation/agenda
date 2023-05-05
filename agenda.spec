@@ -32,6 +32,8 @@ BuildRequires:	cmake(Qt5Gui)
 BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Widgets)
 
+Requires: mauikit-calendar
+
 %description
 Calendar application built with MauiKit.
 
