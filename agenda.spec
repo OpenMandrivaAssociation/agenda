@@ -1,11 +1,11 @@
-%define snapshot 20220107
+#define snapshot 20220107
 
-Name:		bonsai
-Version:	0.0.1
+Name:		agenda
+Version:	0.1.1
 Release:	%{?snapshot:0.%{snapshot}.}1
-Summary:	Git repository manager for Plasma Mobile
+Summary:	Calendar application built with MauiKit.
 URL:    	https://mauikit.org
-Source0:	https://invent.kde.org/maui/%{name}/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
+Source0:	https://invent.kde.org/maui/agenda/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Development/Tools
 BuildRequires:	cmake
@@ -21,6 +21,7 @@ BuildRequires:	cmake(Qt5Xml)
 BuildRequires:	cmake(KF5I18n)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(MauiKit)
+BuildRequires:  cmake(MauiKitCalendar)
 BuildRequires:  cmake(MauiKitFileBrowsing)
 BuildRequires:	gettext
 BuildRequires:	pkgconfig(libgit2)
@@ -32,7 +33,7 @@ BuildRequires:	cmake(Qt5Quick)
 BuildRequires:	cmake(Qt5Widgets)
 
 %description
-Git repository manager for Plasma Mobile
+Calendar application built with MauiKit.
 
 %prep
 %autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
@@ -45,8 +46,4 @@ Git repository manager for Plasma Mobile
 %ninja_install -C build
 
 %files
-%{_bindir}/bonsai
-%{_libdir}/libGitWrap.so
-%{_datadir}/applications/org.maui.bonsai.desktop
-%{_datadir}/icons/hicolor/scalable/apps/bonsai.svg
-%{_datadir}/metainfo/org.maui.bonsai.appdata.xml
+
