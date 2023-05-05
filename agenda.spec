@@ -46,4 +46,7 @@ Calendar application built with MauiKit.
 %ninja_install -C build
 
 %files
-
+%{_bindir}/agenda
+%{_datadir}/applications/org.kde.agenda.desktop
+%{_datadir}/metainfo/org.kde.agenda.appdata.xml
+%{_iconsdir}/hicolor/scalable/apps/agenda.svg
