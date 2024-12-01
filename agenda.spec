@@ -2,9 +2,9 @@
 
 Name:		agenda
 Version:	1.0.0
-Release:	%{?snapshot:0.%{snapshot}.}1
+Release:	%{?snapshot:0.%{snapshot}.}2
 Summary:	Calendar application built with MauiKit.
-URL:    	https://mauikit.org
+URL:    	https://invent.kde.org/maui/agenda/
 Source0:	https://invent.kde.org/maui/agenda/-/archive/%{?snapshot:master}%{!?snapshot:v%{version}}/maui-%{name}-%{?snapshot:master}%{!?snapshot:v%{version}}.tar.bz2%{?snapshot:#/maui-%{name}-%{snapshot}.tar.bz2}
 License:	GPLv3
 Group:		Development/Tools
