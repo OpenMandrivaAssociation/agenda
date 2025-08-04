@@ -49,5 +49,5 @@ Calendar application built with MauiKit.
 %files
 %{_bindir}/agenda
 %{_datadir}/applications/org.kde.agenda.desktop
-%{_datadir}/metainfo/org.kde.agenda.appdata.xml
+%{_datadir}/metainfo/org.kde.agenda.metainfo.xml
 %{_iconsdir}/hicolor/scalable/apps/agenda.svg
