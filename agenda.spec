@@ -1,7 +1,7 @@
 #define snapshot 20220107
 
 Name:		agenda
-Version:	1.0.1
+Version:	1.0.2
 Release:	%{?snapshot:0.%{snapshot}.}2
 Summary:	Calendar application built with MauiKit.
 URL:    	https://invent.kde.org/maui/agenda/
