@@ -46,7 +46,9 @@ Calendar application built with MauiKit.
 %install
 %ninja_install -C build
 
-%files
+%find_lang agenda
+
+%files -f agenda.lang
 %{_bindir}/agenda
 %{_datadir}/applications/org.kde.agenda.desktop
 %{_datadir}/metainfo/org.kde.agenda.metainfo.xml
